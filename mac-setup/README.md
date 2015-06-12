@@ -44,5 +44,8 @@ In my case:
 * DaisyDisk
 * Jedit X Plus
 
+## Plain ol' manual
+
+* Fidelia music player
 
 

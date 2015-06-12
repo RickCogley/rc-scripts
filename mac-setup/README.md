@@ -63,3 +63,4 @@ In my case:
 * Mellel
 * OneTime
 * PowerTunes
+* VelaTerra

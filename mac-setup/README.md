@@ -50,3 +50,4 @@ In my case:
 * Adobe Apps via CC Subscription
 * MS Office via Subscription
 * Ableton
+* Daylite

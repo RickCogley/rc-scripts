@@ -58,3 +58,4 @@ In my case:
 * Garmin basecamp
 * Garmin mapmanager
 * Google Nik Collection - install direct from special download link
+* Audient ID22 app

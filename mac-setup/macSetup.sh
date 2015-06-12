@@ -2,8 +2,8 @@
 
 brewapps=(
     zsh
+    zsh-completions
     bash
-    fish
     git
     vim
     ack
@@ -21,43 +21,119 @@ brewapps=(
     gnu-tar
     gnu-sed
     gawk
+    asciidoc
+    docbook
+    aspell
+    fortune
+    mtr
+    stow
+    autoconf
+    automake
+    chuck
+    cowsay
+    gdbm
+    jenv
+    tree
+    gettext
+    jq
+    pcre
+    xz
+    bazaar
+    emacs
+    gibo
+    readline
+    yuicompressor
+    openssl
+    libgpg-error
+    libksba
+    enscript
+    libyaml			
 )
 
 caskapps=(
-    dropbox
-    firefox
-    flux
-    google-chrome
-    iterm2
-    slack
-    seil
-    vlc
-    macvim
-    typinator
-    skype
-    sizeup
-    evernote
-    istat-menus
-    opera
-    mplayer-osx-extended
-    sourcetree
-    amazon-music
-    amazon-cloud-drive
-    lastpass
-    transmit
-    gitter
-    bartender
-    imageoptim
-    atom
-    google-hangouts
-    qlmarkdown
-    webpquicklook
-    qlstephen
-    qlvideo
-    asepsis
-    cheatsheet
-    appcleaner
-    fantastical
+  1password
+  a-better-finder-rename
+  acorn
+  appcleaner
+  asepsis
+  atom
+  audio-hijack
+  audiomate
+  balsamiq-mockups
+  bartender
+  base
+  carbon-copy-cloner
+  cheatsheet
+  cocktail
+  coda
+  dash
+  diffmerge
+  drobo-dashboard
+  dropbox
+  firefox
+  fission
+  fitbit-connect
+  flash-player
+  flip4mac
+  flowdock
+  fontexplorer-x-pro
+  garmin-ant-agent
+  garmin-express
+  garmin-training-center
+  github
+  gitter
+  google-adwords-editor
+  google-chrome
+  google-drive
+  google-earth
+  google-earth-web-plugin
+  google-hangouts
+  google-notifier
+  gopro-studio
+  handbrake
+  hazel
+  hipchat
+  imageoptim
+  ishowu
+  istat-menus
+  iterm2
+  kaleidoscope
+  knox
+  launchbar
+  little-snitch
+  macvim
+  mail-plugin-manager
+  monotype-skyfonts
+  mountain
+  mplayer-osx-extended
+  nvalt
+  omnidazzle
+  omnifocus
+  omnifocus-clip-o-tron
+  omnigraffle
+  opera
+  path-finder
+  paw
+  qlmarkdown
+  qlstephen
+  qlvideo
+  reflector
+  screenflow
+  scrivener
+  seil
+  sizeup
+  skype
+  slack
+  smartgit
+  snagit
+  sourcetree
+  superduper
+  transmission
+  transmit
+  typinator
+  vlc
+  webpquicklook
+  yubikey-personalization-gui
 )
 
 req()
@@ -101,6 +177,7 @@ brew install findutils --with-default-names
 echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH."
 brew tap homebrew/dupes
 brew install homebrew/dupes/grep
+brew install homebrew/dupes/rsync
 
 echo "*********************************************"
 echo "  Step 3. Installing NonBrew shell software  "

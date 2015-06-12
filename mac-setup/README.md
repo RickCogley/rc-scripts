@@ -53,3 +53,4 @@ In my case:
 * Daylite
 * Devon Agent pro
 * Disk Sensei
+* Ingestamatic and etc

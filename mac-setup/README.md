@@ -47,5 +47,6 @@ In my case:
 ## Plain ol' manual
 
 * Fidelia music player
-
+* Adobe Apps via CC Subscription
+* MS Office via Subscription
 

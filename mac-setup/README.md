@@ -60,3 +60,4 @@ In my case:
 * Google Nik Collection - install direct from special download link
 * Audient ID22 app
 * MagiCal
+* Mellel

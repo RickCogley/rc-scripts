@@ -54,3 +54,6 @@ In my case:
 * Devon Agent pro
 * Disk Sensei
 * Ingestamatic and etc
+* Garmin mapinstall
+* Garmin basecamp
+* Garmin mapmanager

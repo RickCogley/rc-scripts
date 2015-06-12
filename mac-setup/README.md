@@ -62,3 +62,4 @@ In my case:
 * MagiCal
 * Mellel
 * OneTime
+* PowerTunes

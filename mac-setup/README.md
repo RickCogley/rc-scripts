@@ -51,3 +51,4 @@ In my case:
 * MS Office via Subscription
 * Ableton
 * Daylite
+* Devon Agent

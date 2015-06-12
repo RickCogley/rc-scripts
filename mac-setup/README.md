@@ -59,3 +59,4 @@ In my case:
 * Garmin mapmanager
 * Google Nik Collection - install direct from special download link
 * Audient ID22 app
+* MagiCal

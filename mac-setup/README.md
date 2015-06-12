@@ -65,3 +65,4 @@ In my case:
 * PowerTunes
 * VelaTerra
 * WOFF コンバーター
+* xkpasswd

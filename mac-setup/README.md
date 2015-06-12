@@ -49,4 +49,4 @@ In my case:
 * Fidelia music player
 * Adobe Apps via CC Subscription
 * MS Office via Subscription
-
+* Ableton

@@ -52,3 +52,4 @@ In my case:
 * Ableton
 * Daylite
 * Devon Agent pro
+* Disk Sensei

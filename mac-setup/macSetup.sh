@@ -43,11 +43,11 @@ brewapps=(
     gibo
     readline
     yuicompressor
-    openssl		
-	libgpg-error		
-	libksba				
-	enscript
-	libyaml			
+    openssl
+    libgpg-error
+    libksba
+    enscript
+    libyaml			
 )
 
 caskapps=(

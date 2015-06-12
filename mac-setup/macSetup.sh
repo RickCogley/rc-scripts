@@ -2,8 +2,8 @@
 
 brewapps=(
     zsh
+    zsh-completions
     bash
-    fish
     git
     vim
     ack
@@ -21,6 +21,33 @@ brewapps=(
     gnu-tar
     gnu-sed
     gawk
+    asciidoc
+    docbook
+    aspell
+    fortune
+    mtr
+    stow
+    autoconf
+    automake
+    chuck
+    cowsay
+    gdbm
+    jenv
+    tree
+    gettext
+    jq
+    pcre
+    xz
+    bazaar
+    emacs
+    gibo
+    readline
+    yuicompressor
+    openssl		
+	libgpg-error		
+	libksba				
+	enscript
+	libyaml			
 )
 
 caskapps=(
@@ -101,6 +128,7 @@ brew install findutils --with-default-names
 echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH."
 brew tap homebrew/dupes
 brew install homebrew/dupes/grep
+brew install homebrew/dupes/rsync
 
 echo "*********************************************"
 echo "  Step 3. Installing NonBrew shell software  "

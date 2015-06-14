@@ -46,6 +46,7 @@ In my case:
 
 ## Plain ol' manual
 
+* Happy Hacking Keyboard Driver <http://www.pfu.fujitsu.com/hhkeyboard/download.html>
 * Fidelia music player
 * Adobe Apps via CC Subscription
 * MS Office via Subscription

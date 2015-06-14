@@ -1,0 +1,29 @@
+# ----- tag.rc -----
+# Rewrite subject line of the mail and resend:
+#   arg1 is text to pre-pend to the subject line,
+#   arg2 is the address to re-send the mail to
+#
+# get the text to prepend to the subject line 
+TAG=$1 
+ 
+# find out who to forward this email to 
+FORWARD=$2 
+ 
+# extract the original subject (this also eliminates leading whitespace) 
+:0 
+* ^Subject:[    ]*\/[^  ].* 
+{ 
+         SUBJECT=$MATCH 
+} 
+ 
+# create the new subject token 
+SUBJECT="$TAG $MATCH" 
+ 
+# insert it into the headers and remove the From if you do not need it
+:0hf 
+| formail -i "Subject: $SUBJECT" -i "From: whereever@yourdomain.com"
+ 
+# and forward 
+:0 
+! $FORWARD 
+# ----- END tag.rc -----

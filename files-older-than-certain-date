@@ -1,0 +1,3 @@
+find . -name '*.tar.gz' -ctime -1 -exec rm -fi {} \;
+
+

@@ -1,0 +1,76 @@
+This is the syntax for procmail to work, to add headers. See below for the procmail-zendesk-headers.rc file. 
+
+aag-p1: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc aag-p1@esolia.net aag-p1@esolia.zendesk.com",:include:/opt/postfix/esolia-cellphonemail-01
+aag-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc aag-support@esolia.net aag-support@esolia.zendesk.com"
+algn-p1: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc algn-p1@esolia.net algn-p1@esolia.zendesk.com",:include:/opt/postfix/esolia-cellphonemail-01
+algn-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc algn-support@esolia.net algn-support@esolia.zendesk.com"
+ap-p1: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc ap-p1@esolia.net ap-p1@esolia.zendesk.com",:include:/opt/postfix/esolia-cellphonemail-01
+ap-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc ap-support@esolia.net ap-support@esolia.zendesk.com"
+asp-p1: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc asp-p1@esolia.net asp-p1@esolia.zendesk.com",:include:/opt/postfix/esolia-cellphonemail-01
+asp-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc asp-support@esolia.net asp-support@esolia.zendesk.com"
+cjllc-p1: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc cjllc-p1@esolia.net cjllc-p1@esolia.zendesk.com",:include:/opt/postfix/esolia-cellphonemail-01
+cjllc-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc cjllc-support@esolia.net cjllc-support@esolia.zendesk.com"
+cook-p1: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc cook-p1@esolia.net cook-p1@esolia.zendesk.com",:include:/opt/postfix/esolia-cellphonemail-01
+cook-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc cook-support@esolia.net cook-support@esolia.zendesk.com"
+crp-p1: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc crp-p1@esolia.net crp-p1@esolia.zendesk.com",:include:/opt/postfix/esolia-cellphonemail-01
+crp-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc crp-support@esolia.net crp-support@esolia.zendesk.com"
+cv-p1: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc cv-p1@esolia.net cv-p1@esolia.zendesk.com",:include:/opt/postfix/esolia-cellphonemail-01
+cv-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc cv-support@esolia.net cv-support@esolia.zendesk.com"
+dlap-p1: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc dlap-p1@esolia.net dlap-p1@esolia.zendesk.com",:include:/opt/postfix/esolia-cellphonemail-01
+dlap-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc dlap-support@esolia.net dlap-support@esolia.zendesk.com"
+fei-p1: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc fei-p1@esolia.net fei-p1@esolia.zendesk.com",:include:/opt/postfix/esolia-cellphonemail-01
+fei-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc fei-support@esolia.net fei-support@esolia.zendesk.com"
+gar-p1: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc gar-p1@esolia.net gar-p1@esolia.zendesk.com",:include:/opt/postfix/esolia-cellphonemail-01
+gar-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc gar-support@esolia.net gar-support@esolia.zendesk.com"
+jung-p1: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc jung-p1@esolia.net jung-p1@esolia.zendesk.com",:include:/opt/postfix/esolia-cellphonemail-01
+jung-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc jung-support@esolia.net jung-support@esolia.zendesk.com"
+kyi-p1: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc kyi-p1@esolia.net kyi-p1@esolia.zendesk.com",:include:/opt/postfix/esolia-cellphonemail-01
+kyi-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc kyi-support@esolia.net kyi-support@esolia.zendesk.com"
+lfkk-p1: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc lfkk-p1@esolia.net lfkk-p1@esolia.zendesk.com",:include:/opt/postfix/esolia-cellphonemail-01
+lfkk-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc lfkk-support@esolia.net lfkk-support@esolia.zendesk.com"
+ljam-p1: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc ljam-p1@esolia.net ljam-p1@esolia.zendesk.com",:include:/opt/postfix/esolia-cellphonemail-01
+ljam-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc ljam-support@esolia.net ljam-support@esolia.zendesk.com"
+lmv-p1: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc lmv-p1@esolia.net lmv-p1@esolia.zendesk.com",:include:/opt/postfix/esolia-cellphonemail-01
+lmv-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc lmv-support@esolia.net lmv-support@esolia.zendesk.com"
+lopo-p1: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc lopo-p1@esolia.net lopo-p1@esolia.zendesk.com",:include:/opt/postfix/esolia-cellphonemail-01
+lopo-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc lopo-support@esolia.net lopo-support@esolia.zendesk.com"
+mbkp-p1: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc mbkp-p1@esolia.net mbkp-p1@esolia.zendesk.com",:include:/opt/postfix/esolia-cellphonemail-01
+mbkp-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc mbkp-support@esolia.net mbkp-support@esolia.zendesk.com"
+mwv-p1: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc mwv-p1@esolia.net mwv-p1@esolia.zendesk.com",:include:/opt/postfix/esolia-cellphonemail-01
+mwv-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc mwv-support@esolia.net mwv-support@esolia.zendesk.com"
+neca-p1: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc neca-p1@esolia.net neca-p1@esolia.zendesk.com",:include:/opt/postfix/esolia-cellphonemail-01
+neca-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc neca-support@esolia.net neca-support@esolia.zendesk.com"
+psly-p1: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc psly-p1@esolia.net psly-p1@esolia.zendesk.com",:include:/opt/postfix/esolia-cellphonemail-01
+psly-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc psly-support@esolia.net psly-support@esolia.zendesk.com"
+sac-p1: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc sac-p1@esolia.net sac-p1@esolia.zendesk.com",:include:/opt/postfix/esolia-cellphonemail-01
+sac-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc sac-support@esolia.net sac-support@esolia.zendesk.com"
+tm-p1: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc tm-p1@esolia.net tm-p1@esolia.zendesk.com",:include:/opt/postfix/esolia-cellphonemail-01
+tm-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc tm-support@esolia.net tm-support@esolia.zendesk.com"
+wb-p1: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc wb-p1@esolia.net wb-p1@esolia.zendesk.com",:include:/opt/postfix/esolia-cellphonemail-01
+wb-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc wb-support@esolia.net wb-support@esolia.zendesk.com"
+wbj-p1: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc wbj-p1@esolia.net wbj-p1@esolia.zendesk.com",:include:/opt/postfix/esolia-cellphonemail-01
+wbj-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc wbj-support@esolia.net wbj-support@esolia.zendesk.com"
+
+
+
+
+
+# procmail rc procmail-zendesk-headers.rc for rewriting headers for zendesk
+#   arg1 is intended from
+#   arg2 is the address to re-send the mail to
+#
+# get the text to prepend to the subject line 
+INTENDEDFROM=$1 
+ 
+# find out who to forward this email to 
+FORWARD=$2
+
+# insert intended from into the headers 
+:0hf 
+| /usr/bin/formail -i "X-Forwarded-For: $INTENDEDFROM" -i "X-Envelope-To: $INTENDEDFROM" -i  "X-Orig-To: $INTENDEDFROM"
+ 
+# and forward 
+:0 
+! $FORWARD 
+# ----- END procmail-zendesk-headers.rc -----
+

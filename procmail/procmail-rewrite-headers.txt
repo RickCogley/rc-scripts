@@ -1,0 +1,82 @@
+tsb:   "| /usr/bin/procmail -m /opt/postfix/procmail-tag.rc [TSB] track"
+
+sac-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc sac-support@esolia.net sac-support@esolia.zendesk.com"
+
+fei-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc fei-support@esolia.net fei-support@esolia.zendesk.com"
+
+cook-support: "| /usr/bin/procmail -m /opt/postfix/procmail-zendesk-headers.rc cook-support@esolia.net cook-support@esolia.zendesk.com"
+
+
+
+# procmail rc procmail-zendesk-headers.rc for rewriting headers for zendesk
+#   arg1 is intended from
+#   arg2 is the address to re-send the mail to
+#
+# get the text to prepend to the subject line 
+INTENDEDFROM=$1 
+ 
+# find out who to forward this email to 
+FORWARD=$2
+
+# insert intended from into the headers 
+:0hf 
+| /usr/bin/formail -i "X-Forwarded-For: $INTENDEDFROM" -i "X-Envelope-To: $INTENDEDFROM" -i  "X-Orig-To: $INTENDEDFROM"
+ 
+# and forward 
+:0 
+! $FORWARD 
+# ----- END procmail-zendesk-headers.rc -----
+
+
+
+
+
+
+-i "X-Forwarded-For: $INTENDEDFROM" -i "X-Envelope-To: $INTENDEDFROM" -i  "X-Orig-To: $INTENDEDFROM"
+
+
+# ----- tag.rc -----
+# Rewrite subject line of the mail and resend:
+#   arg1 is text to pre-pend to the subject line,
+#   arg2 is the address to re-send the mail to
+#
+# get the text to prepend to the subject line 
+TAG=$1 
+ 
+# find out who to forward this email to 
+FORWARD=$2 
+ 
+# extract the original subject (this also eliminates leading whitespace) 
+:0 
+* ^Subject:[    ]*\/[^  ].* 
+{ 
+         SUBJECT=$MATCH 
+} 
+ 
+# create the new subject token 
+SUBJECT="$TAG $MATCH" 
+ 
+# insert it into the headers 
+:0hf 
+| formail -i "Subject: $SUBJECT" -i "From: tsb@esolia.net"
+ 
+# and forward 
+:0 
+! $FORWARD 
+# ----- END tag.rc -----
+
+
+X-Forwarded-For: email@example.com 
+X-Envelope-To: email@example.com 
+X-Orig-To: email@example.com
+
+
+
+:0 hfw
+     * !^Content-Length:
+     | /usr/bin/formail -a "Content-Length: 0000000000"
+
+
+
+
+

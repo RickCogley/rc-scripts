@@ -2,6 +2,9 @@
 # Author: Rick Cogley
 # Updated: 27 Jan 2016
 # Purpose: For use in a Mac OS X automator action, set to watch a screenshot folder.
+# Assumes:
+#   GOPATH is set
+#   drive is installed (https://github.com/odeke-em/drive)
 
 cd /Users/rcogley/gdrive/Screenshots
 cp "$1" .

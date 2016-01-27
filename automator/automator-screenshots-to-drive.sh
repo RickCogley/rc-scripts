@@ -21,5 +21,9 @@ $GOPATH/bin/drive pub "$fn"
 $GOPATH/bin/drive edit-desc --description "$descn" "$fn"
 $GOPATH/bin/drive url "$fn" | grep -o 'http*.*' | pbcopy
 
-# Reminder
+# REMINDERS
 #  fn=`cat var.txt`
+#  capture on mac: cmd-shift-4
+#  change screenshot file type: defaults write com.apple.screencapture type png
+#  change screenshot file name: defaults write com.apple.screencapture name "JRC Screenshot"
+#  make changes take effect: killall SystemUIServer

@@ -5,13 +5,18 @@
 # Assumes:
 #   GOPATH is set
 #   drive is installed (https://github.com/odeke-em/drive)
+#   there is a folder initialized with "drive init"
 
-cd /Users/rcogley/gdrive/Screenshots
-cp "$1" .
-echo "$1" > var.txt
-# fn=`cat var.txt`
+DRIVEINITPATH=$HOME/gdrive
+
+cd $DRIVEINITPATH/Screenshots
+ln -s "$1"
+echo "$1" > out-originalpath.txt
 fn=$(basename "$1")
-echo "$fn" >> var.txt
+echo "$fn" >> out-filename.txt
 /Users/rcogley/gocode/bin/drive push --quiet "$fn"
 /Users/rcogley/gocode/bin/drive pub "$fn"
 /Users/rcogley/gocode/bin/drive url "$fn" | grep -o 'http*.*' | pbcopy
+
+# Alternative
+#  n=`cat var.txt`

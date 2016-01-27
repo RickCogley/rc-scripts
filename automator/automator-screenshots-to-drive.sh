@@ -9,6 +9,7 @@
 
 DRIVEINITPATH=$HOME/gdrive
 GOPATH=$HOME/gocode
+EXIFTOOLBIN=/usr/local/bin/exiftool
 CURRYEAR=$(date +'%Y')
 EXIFAUTHOR="Rick Cogley"
 EXIFDISCLAIMER="All rights reserved."
@@ -17,9 +18,9 @@ cd $DRIVEINITPATH/Screenshots
 ln -s "$1"
 echo "$1" > out-originalpath.txt
 fn=$(basename "$1")
-echo "$fn" >> out-filename.txt
+echo "$fn" > out-filename.txt
 descn="$(osascript -e 'Tell application "System Events" to display dialog "Enter the description:" default answer "Screenshot of "' -e 'text returned of result' 2>/dev/null)"
-exiftool -artist="$EXIFAUTHOR" -author="$EXIFAUTHOR" -copyright="$CURRYEAR $EXIFAUTHOR" -disclaimer="$EXIFDISCLAIMER" -comment="$descn" -description="$descn" "$fn"
+$EXIFTOOLBIN -artist="$EXIFAUTHOR" -author="$EXIFAUTHOR" -copyright="$CURRYEAR $EXIFAUTHOR" -disclaimer="$EXIFDISCLAIMER" -comment="$descn" -description="$descn" "$fn"
 $GOPATH/bin/drive push --quiet "$fn"
 $GOPATH/bin/drive pub "$fn"
 $GOPATH/bin/drive edit-desc --description "$descn" "$fn"

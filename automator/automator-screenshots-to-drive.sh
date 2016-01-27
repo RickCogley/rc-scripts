@@ -28,7 +28,7 @@ $GOPATH/bin/drive url "$fn" | grep -o 'http*.*' | pbcopy
 
 # REMINDERS
 #  fn=`cat var.txt`
-#  install exiftool via brew
+#  you can install exiftool via brew
 #  capture on mac: cmd-shift-4
 #  change screenshot file type: defaults write com.apple.screencapture type png
 #  change screenshot file name: defaults write com.apple.screencapture name "JRC Screenshot"

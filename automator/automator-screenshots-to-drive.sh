@@ -15,9 +15,11 @@ ln -s "$1"
 echo "$1" > out-originalpath.txt
 fn=$(basename "$1")
 echo "$fn" >> out-filename.txt
+descn="$(osascript -e 'Tell application "System Events" to display dialog "Enter the description:" default answer ""' -e 'text returned of result' 2>/dev/null)"
 $GOPATH/bin/drive push --quiet "$fn"
 $GOPATH/bin/drive pub "$fn"
+$GOPATH/bin/drive edit-desc --description "$descn" "$fn"
 $GOPATH/bin/drive url "$fn" | grep -o 'http*.*' | pbcopy
 
-# Alternative
-#  n=`cat var.txt`
+# Reminder
+#  fn=`cat var.txt`

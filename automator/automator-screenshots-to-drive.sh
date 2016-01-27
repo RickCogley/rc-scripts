@@ -8,6 +8,7 @@
 #   there is a folder initialized with "drive init"
 
 DRIVEINITPATH=$HOME/gdrive
+GOPATH=$HOME/gocode
 
 cd $DRIVEINITPATH/Screenshots
 ln -s "$1"

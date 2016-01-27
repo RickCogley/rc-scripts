@@ -14,9 +14,9 @@ ln -s "$1"
 echo "$1" > out-originalpath.txt
 fn=$(basename "$1")
 echo "$fn" >> out-filename.txt
-/Users/rcogley/gocode/bin/drive push --quiet "$fn"
-/Users/rcogley/gocode/bin/drive pub "$fn"
-/Users/rcogley/gocode/bin/drive url "$fn" | grep -o 'http*.*' | pbcopy
+$GOPATH/bin/drive push --quiet "$fn"
+$GOPATH/bin/drive pub "$fn"
+$GOPATH/bin/drive url "$fn" | grep -o 'http*.*' | pbcopy
 
 # Alternative
 #  n=`cat var.txt`
